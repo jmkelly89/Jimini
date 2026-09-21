@@ -1,0 +1,9 @@
+Jimini/.venv
+.venv
+__pycache__
+*.pyc
+.env
+.flask_session
+.git
+.vscode
+jimini_qr.png

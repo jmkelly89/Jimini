@@ -1,0 +1,3 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/Jimini/.venv/Scripts/python.exe"
+}

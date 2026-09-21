@@ -1,0 +1,7 @@
+flask
+flask-session
+gunicorn
+openai
+python-dotenv
+qrcode[pil]
+waitress

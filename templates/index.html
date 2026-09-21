@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Chat with Jimini</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>Jimini</h1>
+        <p>Say hello — banter guaranteed.</p>
+      </header>
+
+      <main id="chat" class="chat" aria-live="polite">
+        <div class="message jimini">
+          <span class="bubble"
+            >Alright. I'm Jimini. Go on then, say something.</span
+          >
+        </div>
+      </main>
+
+      <form id="chat-form" class="composer" autocomplete="off">
+        <input
+          id="message-input"
+          type="text"
+          placeholder="Type a message…"
+          maxlength="500"
+          required
+        />
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
